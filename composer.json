@@ -1,0 +1,17 @@
+{
+	"name": "cando/js-tools",
+	"description": "Lightweight house-made CanDo JavaScript framework",
+	"keywords": ["javascript"],
+	"authors": [
+		{
+			"name": "Sergiy Misyura",
+			"email": "sergiy@cando.com"
+		}
+	],
+	"minimum-stability": "dev",
+	"autoload": {
+		"psr-4": {
+			"cando\\jstools\\": ""
+		}
+	}
+}
