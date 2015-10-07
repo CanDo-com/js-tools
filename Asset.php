@@ -20,7 +20,7 @@ class JSToolsAsset extends AssetBundle
 		else
 		{
 			$this->sourcePath = __DIR__ . '/dist';
-			$this->js = require(__DIR__ . '/js-tools.min.js');
+			$this->js = ['js-tools.min.js'];
 		}
 
 		parent::init();
