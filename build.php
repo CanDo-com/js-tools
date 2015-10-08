@@ -2,8 +2,9 @@
 
 $files = require(__DIR__ . DIRECTORY_SEPARATOR . 'files.php');
 
-$command = 'java -jar ' . $argv[1] . '  --compilation_level SIMPLE_OPTIMIZATIONS --js_output_file dist'
-	. DIRECTORY_SEPARATOR . 'js-tools.min.js';
+$destination = 'dist' . DIRECTORY_SEPARATOR . 'js-tools.min.js';
+
+$command = 'java -jar ' . $argv[1] . '  --compilation_level SIMPLE_OPTIMIZATIONS --js_output_file ' . $destination;
 
 foreach($files as $file)
 {
@@ -14,17 +15,19 @@ passthru($command);
 
 $version = trim(file_get_contents('version'));
 
-$code = file_get_contents('js-tools.min.js');
+$code = file_get_contents($destination);
 $today = date('m/d/Y');
 $text = <<<EOD
 /*!
  * js-tools library
  * Version $version built $today
+ * https://github.com/CanDo-com/js-tools.git
  *
- * By CanDo and Sergey Misyura <sergey@cando.com>
+ * Copyright (c) 2015 Advertical LLC dba CanDo
+ * http://cando.com
  *
- * https://github.com/sergeymisura/js-tools
+ * Author Sergiy Misyura <sergiy@cando.com>
  */
 
 EOD;
-file_put_contents('dist' .  DIRECTORY_SEPARATOR. 'js-tools.min.js', $text . $code);
+file_put_contents($destination, $text . $code);
