@@ -2,11 +2,12 @@
 
 $files = require(__DIR__ . DIRECTORY_SEPARATOR . 'files.php');
 
-$command = 'java -jar ' . $argv[1] . '  --compilation_level SIMPLE_OPTIMIZATIONS --js_output_file js-tools.min.js';
+$command = 'java -jar ' . $argv[1] . '  --compilation_level SIMPLE_OPTIMIZATIONS --js_output_file dist'
+	. DIRECTORY_SEPARATOR . 'js-tools.min.js';
 
 foreach($files as $file)
 {
-	$command .= ' --js ' . $file;
+	$command .= ' --js source' . DIRECTORY_SEPARATOR . $file;
 }
 
 passthru($command);
@@ -26,4 +27,4 @@ $text = <<<EOD
  */
 
 EOD;
-file_put_contents('js-tools.min.js', $text . $code);
+file_put_contents('dist' .  DIRECTORY_SEPARATOR. 'js-tools.min.js', $text . $code);
