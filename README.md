@@ -27,7 +27,7 @@ composer config repositories.cando-jstools vcs git@github.com:CanDo-com/js-tools
 composer require cando/js-tools:dev-master
 ```
 
-Otherwise clone the repository from git@github.com:CanDo-com/js-tools.git or download the latest stable version from 
+Otherwise clone the repository from ```git@github.com:CanDo-com/js-tools.git``` or download the latest stable version from 
 [our GitHub repository](https://github.com/CanDo-com/js-tools).
 
 Adding to the project
