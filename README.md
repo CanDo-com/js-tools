@@ -42,4 +42,10 @@ For the projects that don't use Yii, include ```dist/js-tools.min.js``` right af
 Documentation
 -------------
 
-Basic documentation can be found in the [docs](docs) folder.
+Basic documentation can be found in the [docs](docs) folder. For more details - dive into the source code, it is mostly 
+annotated and pretty small.
+
+Contribution
+------------
+
+Feedback is much appreciated in a form of GitHub issues and pull requests.
