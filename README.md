@@ -1,5 +1,7 @@
-JS-Tools - Lightweight JavaScript Framework
-===========================================
+JS-Tools
+========
+
+### Lightweight JavaScript Framework
 
 Requirements
 ------------
@@ -34,4 +36,9 @@ Adding to the project
 Projects based on Yii2 can use ```\cando\jstools\JSToolsAsset``` class which is an Yii2 asset bundle that includes 
 either the minified version for the live environment or source code for the development environment. 
 
-For the projects that don't use Yii, include dist/js-tools.min.js right after jQuery.
+For the projects that don't use Yii, include ```dist/js-tools.min.js``` right after jQuery.
+
+Documentation
+-------------
+
+Basic documentation can be found in the [docs](docs) folder.
