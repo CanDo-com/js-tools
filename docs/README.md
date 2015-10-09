@@ -1,5 +1,5 @@
-JS-Tools
-========
+# JS-Tools
 
-Basic usage
------------
+
+## Basic usage
+
