@@ -8,8 +8,9 @@ Requirements
 
 The framework requires jQuery to be loaded before js-tools. 
 
-If you are going to use client-side rendering, template library must also be loaded. The framework does not include 
-template rendering and relies on an external library. Currently we have support for the following template engines:
+If you are going to use client-side rendering, the template library must also be loaded. The framework does not include 
+template rendering and relies on an external library. Currently we have support for the following template engines 
+(although wrappers for other template engines could be added fairly easily):
 
 - [Handlebars](http://handlebarsjs.com/)
 - [Mustache](https://mustache.github.io/)
