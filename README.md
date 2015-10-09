@@ -1,6 +1,19 @@
 JS-Tools - Lightweight JavaScript Framework
 ===========================================
 
+Requirements
+------------
+
+The framework requires jQuery to be loaded before js-tools. 
+
+If you are going to use client-side rendering, template library must also be loaded. The framework does not include 
+template rendering and relies on an external library. Currently we have support for the following template engines:
+
+- [Handlebars](http://handlebarsjs.com/)
+- [Mustache](https://mustache.github.io/)
+- [Underscore.js](http://underscorejs.org/#template)
+- jQuery Templates (although this project is abandoned by jQuery team and its usage is highly discouraged)
+
 Installation
 ------------
 
