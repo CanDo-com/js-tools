@@ -17,5 +17,3 @@ piece of HTML that has a controller attached to it, as well as any piece of HTML
 is passing through the transformations registered in the application. Transformations can be used to enrich HTML code 
 with new attributes (for example, you can write ```<select data-selected="value">``` to make sure that value will be 
 selected by default when HTML is loaded or rendered).
-
-
