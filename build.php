@@ -31,3 +31,5 @@ $text = <<<EOD
 
 EOD;
 file_put_contents($destination, $text . $code);
+
+passthru('cd tests; buster-static ./static');
