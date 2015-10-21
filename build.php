@@ -11,7 +11,7 @@ foreach($files as $file)
 	$command .= ' --js source' . DIRECTORY_SEPARATOR . $file;
 }
 
-passthru($command);
+passthru($command . ' 2>&1');
 
 $version = trim(file_get_contents('version'));
 
