@@ -9,6 +9,6 @@ config["js-tools"] = {
 	],
 	tests: [
 		"tests/*-test.js"
-	]
-}
-
+	],
+	testbed: "tests/test-bed.html"
+};
