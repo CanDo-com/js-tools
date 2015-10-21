@@ -1,0 +1,5 @@
+#!/bin/bash
+
+buster-static ./static
+cp -r ./html ./static/html
+
