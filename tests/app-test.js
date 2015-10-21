@@ -1,7 +1,7 @@
 
 buster.testCase('Application namespace', {
 		setUp: function() {
-			this.app = window.app;
+			this.app = window.app.reset();
 		},
 
 		'Application object exists': function() {

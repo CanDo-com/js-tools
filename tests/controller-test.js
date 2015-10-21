@@ -1,7 +1,7 @@
 
 buster.testCase('Controllers', {
 		setUp: function() {
-			this.app = window.app;
+			this.app = window.app.reset();
 
 			this.app.controller('test-controller', function() {
 				return {
